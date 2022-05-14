@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import ReactTooltip from 'react-tooltip'
 
 import './Skills.scss'
-import { AppWrap } from '../../wrapper'
+import { AppWrap, MotionWrap } from '../../wrapper'
 import { urlFor, client } from '../../client'
 
 const Skills = () => {
@@ -86,4 +86,4 @@ const Skills = () => {
   )
 }
 
-export default AppWrap(Skills, 'skills')
+export default AppWrap(MotionWrap(Skills, 'app__skills'), 'skills', 'app__primarybg')
