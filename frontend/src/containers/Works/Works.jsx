@@ -22,7 +22,7 @@ const Works = () => {
       .catch(error => {
         console.log(error)
       })
-  }, [activeFilter])
+  }, [])
 
   const handleWorkFilter = (item) => {
     setActiveFilter(item)
