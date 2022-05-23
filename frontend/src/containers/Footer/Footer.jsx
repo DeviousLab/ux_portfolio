@@ -5,6 +5,7 @@ import './Footer.scss'
 import { images } from '../../constants'
 import { AppWrap, MotionWrap } from '../../wrapper'
 import { client } from '../../client'
+import { SocialMedia } from '../../components'
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -43,11 +44,13 @@ const Footer = () => {
   }
   return (
     <>
-      <h2 className="head-text">Get a coffee and say hello</h2>
+      <h2 className="head-text">Let's grab a coffee ☕</h2>
       <div className="app__footer-cards">
         <div className="app__footer-card">
           <img src={images.email} alt="email" />
-          <a className='p-text' href="mailto:test@test.com">test@test.com</a>
+          <a className='p-text' href="mailto:t.samarasekera1@uni.brighton.ac.uk
+">t.samarasekera1@uni.brighton.ac.uk
+          </a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="mobile" />
@@ -72,6 +75,11 @@ const Footer = () => {
           <h3 className='head-text'>Thank you for getting in touch!</h3>
         </div>
       }
+      <div className="copyright">
+        <SocialMedia />
+        <p className="p-text">&copy;2022 Tharushi Samarasekera</p>
+        <p className="p-text">All rights reserved</p>
+      </div>
     </>
   )
 }
