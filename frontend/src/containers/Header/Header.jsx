@@ -29,7 +29,7 @@ const Header = () => {
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text">Hello! I am</p>
-              <h1 className="head-text">Micael</h1>
+              <h1 className="head-text">Tharushi</h1>
             </div>
           </div>
           <div className="tag-cmp app__flex">
@@ -57,7 +57,7 @@ const Header = () => {
       whileInView={scaleVariance.whileInView}
       className='app__header-circles'
       >
-        {[images.flutter, images.redux, images.sass].map((img, index) => (
+        {[images.figma, images.illustrator, images.photoshop].map((img, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
             <img src={img} alt="circles" />
           </div>
